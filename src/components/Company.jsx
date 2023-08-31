@@ -59,7 +59,11 @@ function Features() {
           onClick={handleCompanyToggle}
         >
           Company
-          {open? <img style={{marginLeft:'10px'}} src="../images/icon-arrow-up.svg"/> : <img style={{marginLeft:'10px'}} src="../images/icon-arrow-down.svg"/>}
+          {open? <div style={{marginLeft:'10px'}}>
+          <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 5 4-4 4 4"/></svg>
+          </div> : <div style={{marginLeft:'10px'}}>
+          <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/></svg>
+          </div>}
         </Button>
         <Popper
           open={open}
