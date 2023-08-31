@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 18px;
+}
+.container{
+    flex-wrap: nowrap !important;
+}
+.button,.button2{
+
+    text-transform: capitalize !important;
+    border-radius: 12px !important;
+    margin-top: 6px !important;
+    color: hsl(0, 0%, 41%) !important;
+    border: 1px solid hsl(0, 0%, 41%) !important;
+}
+
+.button2{
+    color: white !important;
+    border: 1px solid black !important;
+    padding: 10px 35px !important;
+    margin-top: 30px !important;
+}
+.snap{
+    margin-top: 6px;
+    margin-left: 25px;
+    margin-right: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: black !important;
+}
+p{
+    color: hsl(0, 0%, 41%);
+}
+.image{
+    height: 670px;
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: contain;
+    background-image: url('../images/image-hero-desktop.png');
+}
+.h1{
+    color: black !important;
+    font-size: 75px;
+    font-weight: bold;
+}
+.features{
+    text-transform: capitalize !important;
+    font-size: 18px !important;
+    color: hsl(0, 0%, 41%) !important;
+    font-weight: 700 !important;
+    margin-top: 5px !important;
+}
+.hover:hover{
+    cursor: pointer;
+}
+.button2:hover{
+    color: black !important;
+    background-color: white !important;
+}
+.drawer{
+    display: none !important;
+}
+.featuresOpen{
+    text-transform: capitalize !important;
+    font-size: 18px !important;
+    color: hsl(0, 0%, 41%) !important;
+    font-weight: 700 !important;
+    margin-top: 5px !important;
+}
+.CompanyOpen{
+    text-transform: capitalize !important;
+    font-size: 18px !important;
+    color: hsl(0, 0%, 41%) !important;
+    font-weight: 700 !important;
+    margin-top: 5px !important;
+}
+.drawerLeft{
+    margin-left: 8px;
+    margin-bottom: 30px;
+}
+@media screen and (max-width: 450px) {
+    .navDisplay1,.hover,.button{
+        display: none !important;
+    }
+    .contentContainer{
+        padding: 0 !important;
+        flex-direction: column-reverse !important;
+    }
+    .contentPadding{
+        padding-right: 0 !important;
+        text-align: center;
+    }
+    .pPadding{
+        padding-right: 0 !important;
+    }
+    .image{
+        height: 300px ;
+        background-size: content;
+        background-origin: content-box;
+        background-image: url('../images/image-hero-mobile.png');
+    }
+    .h1{
+        font-size: 35px;
+    }
+    .bottomImages{
+        width: 70px !important;
+    }
+    .drawer{
+        display: block !important;  
+        position: absolute;
+    }
+    .register{
+        padding-left: 30px !important;
+        position: relative;
+    }
+    .featuresOpen{
+        margin-bottom: 200px !important;
+    }
+    .CompanyOpen{
+        margin-bottom: 170px !important;
+    }
+
+    .drawerButton{
+        width: 80%;
+        text-transform: capitalize !important;
+        border-radius: 12px !important;
+        margin-top: 6px !important;
+        color: hsl(0, 0%, 41%) !important;
+        border: 1px solid hsl(0, 0%, 41%) !important;
+    }
+}
