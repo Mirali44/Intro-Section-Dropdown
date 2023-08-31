@@ -59,7 +59,7 @@ function Features() {
           onClick={handleFeaturesToggle}
         >
           Features
-          {open? <img style={{marginLeft:'10px'}} src="../images/icon-arrow-up.svg"/> : <img style={{marginLeft:'10px'}} src="../images/icon-arrow-down.svg"/>}
+          {open? <img style={{marginLeft:'10px'}} src="Intro-Section-Dropdown/images/icon-arrow-up.svg"/> : <img style={{marginLeft:'10px'}} src="../images/icon-arrow-down.svg"/>}
         </Button>
         <Popper
           open={open}
